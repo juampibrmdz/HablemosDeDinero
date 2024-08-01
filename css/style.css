@@ -18,16 +18,16 @@ html {
 }
 
 header{
-    color: rgb(24, 24, 24);
+    color: #781856;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-    url('../img/salto1.jpg');
+/*     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    url('../img/img2.webp');
     background-size: cover;
-    background-position: center;
-    background-color: white;
+    background-position: center; */
+    background-color: #ffb648;
     height: 600px;
 }
 
@@ -37,56 +37,101 @@ h1{
     padding: 8px;
     text-align: center;
     color: white;
-    background-color: #781856;
+    background-color: #781856 ;
+    text-shadow: #000000 5px;
 }
 
 h2{
-    color: #FFB23E;
+    color: #781856;
     margin: 60px 5px 25px 5px;
     font-size: 40px;
 }
 
-header div {
-    width: 700px;
-}
-header div h3{
+header .txt1 {
+    width: 70%;
     font-size: 26px;
     text-align: center;
 }
 
-header h4{
-    margin-top: 45px;
-    font-size: 28px;
-    font-weight: 750;
+
+
+.separte{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 header p{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
+}
+
+
+
+.fecha {
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+
+}
+
+.box1 {
+    flex: 1;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+
+}
+
+.box2 {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.fecha::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #781856;
+    transform: translateX(-50%);
 }
 
 header .p2{
-    margin-top: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+
+header .p3{
+    margin: 20px 10px 10px 20px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .botonquiero{
-    margin-top: 20px;
     font-weight: 700;
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 10px;
-    background-color: #D02994;
+    border-radius: 20px;
+    background-color: #781856;
     text-align: center;
     align-content: center;
     padding-bottom: 4px;
-    color: white;
-    width: 250px;
+    color: #ffe3bb;
+    width: 200px;
     height: 40px;
     display: block;
 }
 
 .botonquiero:hover{
-    background-color: #921d67;
+    background-color: #96296e;
 }
 
 .botonwpp{
@@ -112,85 +157,80 @@ header .p2{
 
 .parte2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
-    height: 560px;
+    height: 100%;
+    margin: 0 15%;
+    align-items: center;
+    justify-content: center;
 }
 
 .der{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 40%;
-    margin: 130px;
-    background-color: rgb(255, 218, 243);
-    color: rgb(22, 22, 22);
-    padding: 5px 50px;
-    border-radius: 20px;
+    font-family: "Lexend", sans-serif;
+    width: 80%;
+    margin: 5%;
+    margin-bottom: 100px;
+    background-color: #921d67d0;
+    color: #ffb648;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.329);
 }
 
 .izq{
-    margin-left: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 40px;
+/*     align-items: center;
+ */    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "Lexend", sans-serif;
     width: 100%;
     color: rgb(22, 22, 22);
 }
 
-.parte2 h4{
-    font-size: 28px;
-}
 
-.izq li{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.izq ul li i{
+.divUno h4{
+    text-align: center;
     color: #921d67;
-    font-weight: 600;
-    font-size: 35px;
-    margin-right: 15px;
-}
-
-.der li{
-    list-style: disc;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.der i{
-    color: #921d67;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.divUno{
-    margin-top: 20px;
+    font-size: 32px;
     margin-bottom: 40px;
+    margin-top: 100px;
 }
 
-.divUno span{
-    text-decoration: underline;
-} 
+.divDos .p1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.divDos .p2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 .divDos {
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: 600px;
 }
 
-.derDivUno{
-    margin-bottom: 30px;
+.divDos .caja{
+    width: 45%;
+    height: 390px;
+    padding: 30px;
+    padding-left: 4%;
+    justify-content: center;
+    border-radius: 50px;
+    border: solid 1px #ffb648;
 }
 
 
@@ -198,10 +238,9 @@ header .p2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-    url('../img/salto3.webp');
+    font-family: "Lexend", sans-serif;
+    background: linear-gradient(rgba(255, 182, 72, 0.1), rgba(255, 182, 72, 0.5)), 
+    url('../img/img2.webp');
     background-size: cover;
     background-position: center;
     background-color: rgb(201, 201, 201);
@@ -210,22 +249,24 @@ header .p2{
 }
 
 .querecibiras{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Lexend", sans-serif;
     width: 100%;
     height: 80px;
     padding: 30px;
     text-align: center;
     align-content: center;
-    background-color: rgb(204, 237, 245);
     font-size: 28px;
-    
+    color: #921d67;
+    background: linear-gradient(rgba(255, 182, 72, 0.8), rgba(255, 182, 72, 0.8));
+
 }
 
 .parte3 div{
+    color: #7c285d;
     align-content: center;
     width: 40%;
-    background: linear-gradient(rgba(204, 237, 245, 0.6), rgba(204, 237, 245, 0.6));
-    border-radius: 15px;
+    background: linear-gradient(rgba(255, 182, 72, 0.7), rgba(255, 182, 72, 0.6));
+    border-radius: 20px;
     padding-left: 55px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -234,14 +275,13 @@ header .p2{
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
-    text-transform: uppercase;
     margin-bottom: 20px;
     margin-left: 15px;
     text-indent: -24px;
 }
 
 .parte3 ul li i{
-    color: rgb(22, 22, 22);
+    color: #7c285d;
     font-weight: 500;
     font-size: 35px;
     margin-right: 13px;
@@ -252,13 +292,13 @@ header .p2{
     font-weight: 700;
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 10px;
-    background: linear-gradient(rgba(204, 237, 245, 0.7), rgba(204, 237, 245, 0.7));
+    border-radius: 25px;
+    background: linear-gradient(rgba(255, 182, 72, 0.6), rgba(255, 182, 72, 0.6));
     text-align: center;
     align-content: center;
     padding-bottom: 4px;
-    color: rgba(0, 0, 0, 0.89);
-    width: 250px;
+    color: #7c285d;
+    width: 200px;
     height: 40px;
     display: block;
 }
@@ -269,7 +309,7 @@ header .p2{
 
 .desc{
     padding: 2% 20%;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(255, 255, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
@@ -285,7 +325,6 @@ header .p2{
 }
 
 .titulo1{
-    text-transform: uppercase;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -309,6 +348,7 @@ header .p2{
     width: 200px;
     margin: 60px 0 50px 0;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
 }
 .lili{
     width: 70%;
@@ -325,7 +365,8 @@ header .p2{
     margin: 50px;
     display: flex;
     flex-direction: row;
-    color: black;
+    color: #781856;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.253);
 }
 
 .sigueme i{
@@ -437,141 +478,200 @@ footer div img{
         font-size: 35px;
     }
     
-    header h1{
-        font-size: 18px;
-        }
-
-    header h2{
-        margin-top: 25px;
+    header{
+        color: #781856;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+        url('../img/img2.webp');
+        background-size: cover;
+        background-position: center; */
+        background-color: #ffb648;
+        height: 100%;
+    }
+    
+    h1{
+        font-size: 16px;
+        padding: 8px;
+        color: white;
+        background-color: #781856 ;
+        text-shadow: #000000 5px;
+    }
+    
+    h2{
+        color: #781856;
+        margin: 20px;
+        font-size: 28px;
         text-align: center;
-        font-size: 26px;
-        
     }
-    header div{
-        margin: 0px 20px;
-        width: 100%;
-    }
-
-    header div h3{
-        font-size: 22px;
+    
+    header .txt1 {
+        width: 90%;
+        text-align: center;
     }
 
-    header h4{
-        font-size: 22px;
-        font-weight: 750;
+    header h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    
+    .separte{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
     }
     
     header p{
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 400;
+    }
+        
+    .fecha {
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 90%;
+
+    }
+    
+    .box1 {
+        flex: 1;
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    
+    }
+    
+    .box2 {
+        flex: 1;
+        padding: 10px;
+        text-align: left;
+        position: relative;
+    }
+    
+    .fecha::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1.5px;
+        background-color: #781856;
+        transform: translateX(-50%);
     }
     
     header .p2{
-        margin-top: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        
     }
-
+    
+    header .p3{
+        margin: 20px 10px 10px 20px;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .botonquiero{
+        font-weight: 600;
+        width: 180px;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    
     .parte2{
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(255, 255, 255);
+
         height: 100%;
-        align-items: center;
-        margin-bottom: 50px;
+        margin: 0 3%;
+
     }
     
     .der{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Lexend", sans-serif;
         width: 90%;
-        margin: 0px;
-        padding: 20px;
-        background-color: rgb(255, 218, 243);
-        color: rgb(22, 22, 22);
-        border-radius: 20px;
-
+        margin-bottom: 100px;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 22px;
+        border-radius: 50px;
     }
     
     .izq{
-        margin-left: 0px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding: 20px;
+    /*     align-items: center;
+     */    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        font-family: "Lexend", sans-serif;
         width: 100%;
         color: rgb(22, 22, 22);
     }
     
-    .parte2 h4{
+    
+    .divUno h4{
         text-align: center;
-        font-size: 22px;
-    }
-    
-    .izq li{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-    
-    .izq ul li i{
         color: #921d67;
+        font-size: 32px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+    
+    .divDos .p1{
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .divDos .p2{
+        font-size: 16px;
         font-weight: 600;
-        font-size: 25px;
-        margin-right: 15px;
+        line-height: 1.5;
     }
-    
-    .der li{
-        list-style: disc;
-        font-size: 14px;
-        font-weight: 600;
-        margin: 0 25px;
-        margin-bottom: 10px;
-    }
-
-    
-    .divUno{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .divUno span{
-        text-decoration: underline;
-    } 
     
     .divDos {
         display: flex; 
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        height: 100%;
     }
     
-    .derDivUno{
-        margin-bottom: 10px;
+    .divDos .caja{
+        width: 90%;
+        height: 100%;
+        padding: 30px;
+        justify-content: center;
+        border-radius: 50px;
+        border: solid 1px #ffb648;
+        margin-bottom: 20px;
     }
-
-
+    
     .parte3{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-        url('../img/salto3.webp');
+        font-family: "Lexend", sans-serif;
+        background: linear-gradient(rgba(255, 182, 72, 0.1), rgba(255, 182, 72, 0.5)), 
+        url('../img/img2.webp');
         background-size: cover;
         background-position: center;
         background-color: rgb(201, 201, 201);
-        height: 100%;
+        height: 550px;
         justify-content: center
     }
     
     .querecibiras{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Lexend", sans-serif;
         width: 100%;
         height: 100%;
         padding: 15px;
@@ -586,7 +686,7 @@ footer div img{
         margin: 20px 10px;
         align-content: center;
         width: 90%;
-        background: linear-gradient(rgba(204, 237, 245, 0.6), rgba(204, 237, 245, 0.6));
+        background: linear-gradient(rgba(255, 182, 72, 0.7), rgba(255, 182, 72, 0.6));
         border-radius: 15px;
         padding: 20px;
 
@@ -602,7 +702,7 @@ footer div img{
     }
     
     .parte3 ul li i{
-        color: rgb(22, 22, 22);
+        color: #7c285d;
         font-weight: 500;
         font-size: 20px;
         margin-right: 3px;
@@ -611,15 +711,15 @@ footer div img{
     .botonquiero2{
         margin-top: 0px;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border-radius: 10px;
-        background: linear-gradient(rgba(204, 237, 245, 0.7), rgba(204, 237, 245, 0.7));
+        border-radius: 25px;
+        background: linear-gradient(rgba(255, 182, 72, 0.6), rgba(255, 182, 72, 0.6));
         text-align: center;
         align-content: center;
         padding-bottom: 4px;
-        color: rgba(0, 0, 0, 0.89);
-        width: 250px;
+        color: #7c285d;
+        width: 200px;
         height: 40px;
         display: block;
         margin-bottom: 30px;
@@ -628,7 +728,6 @@ footer div img{
 
     .desc{
         padding: 2% 2%;
-        background-color: rgb(182, 182, 182);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         display: flex;
         flex-direction: column;
@@ -655,6 +754,7 @@ footer div img{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: white;
     }
     
     .foto1{
